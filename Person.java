@@ -1,11 +1,11 @@
 
-public class Person {
+public class Person { //creating a Person Class
 
-	String name;
+	String name; //creating member variables
 	Person(){
 		
 	}
-	Person(String name)
+	Person(String name)   //creating methods
 	{
 		this.name=name;
 	}
@@ -14,7 +14,7 @@ public class Person {
 		System.out.println("Hello"+name);
 	}
 	public static void main(String[] args) {
-		Person p = new Person("John");
-		p.greeting();
+		Person p = new Person("John"); // Instantiation of object
+		p.greeting(); //calling method on the object
 	}
 }
