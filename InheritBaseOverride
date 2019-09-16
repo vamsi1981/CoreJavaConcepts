@@ -1,0 +1,130 @@
+/**
+ * Animal class (also called as super or base)
+ *  
+ */
+class Animal {
+ String food;
+ boolean hunger;
+ String picture;
+ String boundaries;
+
+ public void makeNoise() {
+  System.out.println("Animal makes noise");
+ }
+ 
+ public void eat() {
+  System.out.println("Eats food");
+ }
+ 
+ public void sleep() {
+  System.out.println("Sleeps for rest");
+ }
+ 
+ public void roam() {
+  System.out.println("Roams around using its limbs");
+ }
+ 
+}
+
+/**
+ * Dog subclass of animal (also called as derived or child or extended)
+ * 
+ */
+class Dog extends Animal {
+ 
+ String owner;
+ boolean isPet;
+
+ // Overriding super class behavior
+ @Override
+ public void makesNoise() {
+   System.out.println("Dog barks and makes noise");
+ }
+ 
+ @Override
+ public void eat() {
+  System.out.println("Dog Eats mostly vegetarian and also meat as food");
+ }
+ }
+ /**
+ * Lion subclass of animal (also called as derived or child or extended)
+ * 
+ */
+class Lion extends Animal {
+ 
+ String region;
+
+ // Overriding super class behavior
+ @Override
+ public void makesNoise() {
+   System.out.println("Lion roars and makes noise");
+ }
+ 
+ @Override
+ public void eat() {
+  System.out.println("Lion Eats fresh meat of its hunt as food");
+ }
+ 
+}
+
+/**
+ * Cat subclass of animal (also called as derived or child or extended)
+ * 
+ */
+class Cat extends Animal {
+ 
+ String owner;
+ boolean isPet;
+
+ // Overriding super class behavior
+ @Override
+ public void makesNoise() {
+   System.out.println("Cat Meows and makes noise");
+ }
+ 
+ @Override
+ public void eat() {
+  System.out.println("Cat drinks Milk");
+ }
+ }
+ /**
+ * Tiger subclass of animal (also called as derived or child or extended)
+ * 
+ */
+class Tiger extends Animal {
+ 
+ String region;
+
+ // Overriding super class behavior
+ @Override
+ public void makesNoise() {
+   System.out.println("Tiger roars and makes noise");
+ }
+ 
+ @Override
+ public void eat() {
+  System.out.println("Tiger Eats fresh meat of its hunt as food");
+ }
+ 
+}
+
+ /**
+ * Hippo subclass of animal (also called as derived or child or extended)
+ * 
+ */
+class Hippo extends Animal {
+ 
+ String region;
+
+ // Overriding super class behavior
+ @Override
+ public void makesNoise() {
+   System.out.println("Hippo groans and makes noise");
+ }
+ 
+ @Override
+ public void eat() {
+  System.out.println("Hippo Eats leaves, grass and fruit ");
+ }
+ 
+}
